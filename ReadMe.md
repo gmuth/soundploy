@@ -1,6 +1,6 @@
 # SoundPloy v2
 
-This project is about enabling Bose SoundTouch devices to stream radio stations.
+This project is about re-enabling Bose SoundTouch devices to play radio streams.
 The target audience are users who don't want to tinker with their own servers.
 
 ## Pre-requisites
@@ -46,6 +46,6 @@ We'll use the _orion data API_ for this and send a POST request to the device us
 
 Now your device should start playing the stream.
 
-## Save the stream as a preset
+## Save radio stream to preset
 
 Press and hold the desired preset button on your device or remote until you hear a beep.
