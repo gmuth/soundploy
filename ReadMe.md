@@ -34,8 +34,10 @@ Or use a station directory which lists the stream url.
 
 We'll use the _orion data API_ for this and send a POST request to the device using [Postman](https://getpostman.com).
 
-1. Start Postman and open [collection SoundPloy](https://www.postman.com/soundploy-1806940/bose-soundtouch/collection/5y09857/soundploy)
-2. Navigate to request _Play custom radio stream_
+![SoundPloy Postman](soundploy-postman.png)
+
+1. Start Postman and open [workspace Bose SoundTouch](https://soundploy-1806940.postman.co/workspace/70cec626-e5cf-4cd5-884e-80bd4a7ca40c)
+2. Navigate to [collection SoundPloy](https://www.postman.com/soundploy-1806940/bose-soundtouch/collection/5y09857/soundploy) and request _Play custom radio stream_
 3. Select an existing environment or create a new one 
 4. Set variable `soundtouch` to the IP address of your device
 5. Navigate to _Scripts > Pre-request_
@@ -47,5 +49,3 @@ Now your device should start playing the stream.
 ## Save the stream as a preset
 
 Press and hold the desired preset button on your device or remote until you hear a beep.
-
-
