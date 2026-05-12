@@ -4,7 +4,7 @@
       "href": "../servicesAvailability"
     }
   },
-  "askAgainAfter": 50000,
+  "askAgainAfter": 200000,
   "bmx_services": [
     {
       "_links": {
