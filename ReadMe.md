@@ -7,7 +7,7 @@ The target audience are users who don't want to tinker with their own servers
 ## Pre-requisites
 
 - You should know or learn how to use `telnet` and `Postman`
-- The device is NOT reset to factory settings
+- The device is NOT reset to factory settings (see 1005 UNKNOWN_SOURCE_ERROR below)
 
 ## Configure device
 
@@ -17,12 +17,6 @@ sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/services
 envswitch boseurls set https://marge.bose.com https://worldwide.bose.com/updates/soundtouch
 sys reboot
 ```
-
-Optionally you can check if the configuration was successful by running:
-```
-getpdo CurrentSystemConfiguration
-```
-To end the telnet session run `exit`.
 
 ## Lookup stream url
 
@@ -46,6 +40,15 @@ We'll use the [orion data API](https://github.com/gmuth/soundploy/blob/main/v2/o
 7. Click _Send_
 
 Now your device should start playing the stream.
+
+### 1005 UNKNOWN_SOURCE_ERROR
+
+This means that source `LOCAL_INTERNET_RADIO` is not available.
+Adding this source is a one-time operation.
+You can try one of those methods:
+- [SoundPloy V1](https://gist.github.com/gmuth/3cb7945df6654a965a8a4c60de2627b5) - This method requires root access to the device.
+- [SoundCork](https://github.com/deborahgu/soundcork) - After you successfully played a stream once you can stop SoundCork and use SoundPloy.
+
 
 ## Save radio stream to preset
 
