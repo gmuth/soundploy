@@ -33,7 +33,7 @@ Or use a station directory which lists the stream url.
 
 ## Start custom radio stream
 
-We'll use the _orion data API_ for this and send a POST request to the device using [Postman](https://getpostman.com).
+We'll use the [orion data API](https://github.com/gmuth/soundploy/blob/main/v2/orion/station.php) for this and send a POST request to the device using [Postman](https://getpostman.com).
 
 ![SoundPloy Postman](soundploy-postman.png)
 
