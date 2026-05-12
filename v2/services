@@ -1,0 +1,46 @@
+{
+  "_links": {
+    "bmx_services_availability": {
+      "href": "../servicesAvailability"
+    }
+  },
+  "askAgainAfter": 50000,
+  "bmx_services": [
+    {
+      "_links": {
+        "bmx_token": {
+          "href": "/token"
+        },
+        "self": {
+          "href": "/"
+        }
+      },
+      "askAdapter": false,
+      "assets": {
+        "color": "#000000",
+        "description": "Custom radio stations with BMX.",
+        "icons": {
+          "largeSvg": "https://media.bose.io/bmx-icons/orion/monochrome.svg",
+          "monochromePng": "https://media.bose.io/bmx-icons/orion/monochrome_v2.png",
+          "monochromeSvg": "https://media.bose.io/bmx-icons/orion/monochrome.svg",
+          "smallSvg": "https://media.bose.io/bmx-icons/orion/monochrome.svg"
+        },
+        "name": "Custom Stations"
+      },
+      "authenticationModel": {
+        "anonymousAccount": {
+          "autoCreate": true,
+          "enabled": true
+        }
+      },
+      "baseUrl": "http://soundploy.gmuth.de/v2/orion",
+      "id": {
+        "name": "LOCAL_INTERNET_RADIO",
+        "value": 11
+      },
+      "streamTypes": [
+        "liveRadio"
+      ]
+    }
+  ]
+}
