@@ -1,7 +1,8 @@
 # SoundPloy v2
 
 This project is about re-enabling Bose SoundTouch devices to play radio streams.
-The target audience are users who don't want to tinker with their own servers.
+The target audience are users who don't want to tinker with their own servers
+(e.g. like using [soundcork](https://github.com/deborahgu/soundcork)).
 
 ## Pre-requisites
 
