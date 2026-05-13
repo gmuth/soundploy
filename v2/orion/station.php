@@ -1,7 +1,7 @@
 <?php
-
 // This script supports the Bose mobile app use case "play custom stream"
 // https://content.api.bose.io/core02/svc-bmx-adapter-orion/prod/orion/station?data=
+// Author: Gerhard Muth, 2026-05-06
 
 // Get url parameter data which is a base64 encoded json
 $data = json_decode(base64_decode($_GET["data"]), true);
