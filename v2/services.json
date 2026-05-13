@@ -4,7 +4,7 @@
       "href": "../servicesAvailability"
     }
   },
-  "askAgainAfter": 200000,
+  "askAgainAfter": 86400,
   "bmx_services": [
     {
       "_links": {
@@ -18,7 +18,7 @@
       "askAdapter": false,
       "assets": {
         "color": "#000000",
-        "description": "Custom radio stations with BMX.",
+        "description": "Custom radio stations with SoundPloy.",
         "icons": {
           "largeSvg": "https://media.bose.io/bmx-icons/orion/monochrome.svg",
           "monochromePng": "https://media.bose.io/bmx-icons/orion/monochrome_v2.png",
