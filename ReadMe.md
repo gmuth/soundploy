@@ -1,8 +1,9 @@
 # SoundPloy v2
 
-This project is about re-enabling Bose SoundTouch devices to play radio streams.
+This service is about re-enabling Bose SoundTouch devices to play radio streams.
 The target audience are users who don't want to tinker with their own servers
 (e.g. like using [soundcork](https://github.com/deborahgu/soundcork)).
+It uses a [php script](https://github.com/gmuth/soundploy/blob/main/v2/orion/station.php) hosted in germany and can be used for free.
 
 ## Pre-requisites
 
@@ -11,7 +12,7 @@ The target audience are users who don't want to tinker with their own servers
 
 ## Configure device
 
-[Telnet into the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
+[Telnet to the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
 ```
 sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/services
 envswitch boseurls set https://marge.bose.com https://worldwide.bose.com/updates/soundtouch
@@ -27,7 +28,7 @@ Or use a station directory which lists the stream url.
 
 ## Start custom radio stream
 
-We'll use the [orion data API](https://github.com/gmuth/soundploy/blob/main/v2/orion/station.php) for this and send a POST request to the device using [Postman](https://getpostman.com).
+We'll use the [orion station API](https://github.com/gmuth/soundploy/blob/main/v2/orion/station.php) for this and send a POST request to the device using [Postman](https://getpostman.com).
 
 ![SoundPloy Postman](soundploy-postman.png)
 
