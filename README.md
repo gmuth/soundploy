@@ -18,6 +18,9 @@ envswitch boseurls set https://marge.bose.com https://worldwide.bose.com/updates
 sys reboot
 ```
 
+After the device has rebooted you should try your exising presets,
+however it's likely that you have to create new ones.
+
 ## Lookup stream url
 
 Check out the website of your favorite radio station and look for the stream url.
