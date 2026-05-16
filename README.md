@@ -1,20 +1,15 @@
 # SoundPloy v2
 
-This service is about re-enabling Bose SoundTouch devices to play radio streams.
+This guide is about reenabling Bose SoundTouch devices to play radio streams.
 The target audience are users who don't want to tinker with their own servers
-(e.g. like using [soundcork](https://github.com/deborahgu/soundcork)).
-It uses a [php script](https://github.com/gmuth/soundploy/blob/main/v2/orion/station.php) hosted in germany and can be used for free.
+(e.g. like [soundcork](https://github.com/deborahgu/soundcork) or others).
 
-## Pre-requisites
+## Prerequisites
 
 - You should know or learn how to use `telnet` and `Postman`
 - The device is NOT reset to factory settings (see `1005 UNKNOWN_SOURCE_ERROR` below)
 
 ## Configure device
-
-You will change the `bmxRegistryUrl` to point to the SoundPloy service.
-
-### Use telnet interactive
 
 [Telnet to the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
 ```
@@ -22,12 +17,6 @@ sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/services
 envswitch boseurls set https://marge.bose.com https://worldwide.bose.com/updates/soundtouch
 sys reboot
 ```
-
-### Automated configuration with expect
-
-Power users can use the cli tool [expect](https://linux.die.net/man/1/expect) to automate the commands from above:
-
-`SOUNDTOUCH="192.168.2.105" curl -s http://soundploy.gmuth.de/v2/configure_soundtouch | expect -f -`
 
 ## Lookup stream url
 
@@ -61,6 +50,7 @@ You can try one of those methods:
 - [SoundCork](https://github.com/deborahgu/soundcork) - After you successfully played a stream once you can stop SoundCork and use SoundPloy.
 
 
-## Save radio stream to preset
+## Save radio stream to preset button
 
 Press and hold the desired preset button on your device or remote until you hear a beep.
+From now on you can start the stream by pressing the preset button.
