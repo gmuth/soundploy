@@ -4,11 +4,6 @@ This guide is about reenabling Bose SoundTouch devices to play radio streams.
 The target audience are users who don't want to tinker with their own servers
 (e.g. like [soundcork](https://github.com/deborahgu/soundcork) or others).
 
-## Prerequisites
-
-- You should know or learn how to use `telnet` and `Postman`
-- The device is NOT reset to factory settings (see `1005 UNKNOWN_SOURCE_ERROR` below)
-
 ## Configure device
 
 [Telnet to the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
@@ -46,8 +41,8 @@ Now your device should start playing the stream.
 
 ### 1005 UNKNOWN_SOURCE_ERROR
 
-This means that source `LOCAL_INTERNET_RADIO` is not available.
-Adding this source is a one-time operation.
+This means that the selected source is not available - maybe because the device was reverted to factory settings.
+Adding a missing source is a one-time operation.
 You can try one of those methods:
 - [SoundPloy V1](https://gist.github.com/gmuth/3cb7945df6654a965a8a4c60de2627b5) - This method requires root access to the device.
 - [SoundCork](https://github.com/deborahgu/soundcork) - After you successfully played a stream once you can stop SoundCork and use SoundPloy.
