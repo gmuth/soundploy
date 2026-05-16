@@ -49,8 +49,12 @@ You can try one of those methods:
 - [SoundPloy V1](https://gist.github.com/gmuth/3cb7945df6654a965a8a4c60de2627b5) - This method requires root access to the device.
 - [SoundCork](https://github.com/deborahgu/soundcork) - After you successfully played a stream once you can stop SoundCork and use SoundPloy.
 
-
 ## Save radio stream to preset button
 
 Press and hold the desired preset button on your device or remote until you hear a beep.
 From now on you can start the stream by pressing the preset button.
+
+## Alternative to Postman
+
+Instead of Postman you could also you use Chrome and phfu's Preset Manager:
+https://phfu.codeberg.page/soundtouch-preset-manager
