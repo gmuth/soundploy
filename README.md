@@ -56,5 +56,5 @@ From now on you can start the stream by pressing the preset button.
 
 ## Alternative to Postman
 
-Instead of Postman you could also you use Chrome and phfu's Preset Manager:
+Instead of Postman you could also use Chrome and phfu's Preset Manager:
 https://phfu.codeberg.page/soundtouch-preset-manager
