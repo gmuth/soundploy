@@ -8,7 +8,7 @@ The target audience are users who don't want to tinker with their own servers
 
 [Telnet to the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
 ```
-sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/services.json
+sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/registry.json
 envswitch boseurls set http://no-marge.com https://worldwide.bose.com/updates/soundtouch
 sys reboot
 ```
