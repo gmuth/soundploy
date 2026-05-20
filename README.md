@@ -13,6 +13,7 @@ envswitch boseurls set http://no-marge.com https://worldwide.bose.com/updates/so
 sys reboot
 ```
 
+Soundploy only implements the bmx api. Marge and stats apis are not supported, but the device needs to be tricked.
 After reboot you should try your existing presets,
 however it's likely that you have to create new ones.
 
