@@ -1,4 +1,4 @@
-# SoundPloy v2
+# SoundPloy V2
 
 This guide is about reenabling Bose SoundTouch devices to play radio streams.
 The target audience are users who don't want to tinker with their own servers
