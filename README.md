@@ -57,3 +57,9 @@ From now on you can start the stream by pressing the preset button.
 
 Instead of Postman you could also use Chrome and phfu's Preset Manager:
 https://phfu.codeberg.page/soundtouch-preset-manager
+
+### Known issues
+
+Devices with firmware below version 27.x are not fully supported by SoundPloy.
+You can check your firmware by navigating to `http://your-soundtouch-ip:8090/info`.
+The 27.x firmware update should be available from Bose or other sources.
