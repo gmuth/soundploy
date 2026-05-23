@@ -1,0 +1,10 @@
+{
+  "audio": {
+    "isRealtime": false,
+    "hasPlaylist": false,
+    "streamUrl": "http://downloads.bose.com/ced/utilities/audio/take5.mp3"
+  },
+  "name": "Take Five",
+  "imageUrl": "",
+  "streamType": "onDemand"
+}
