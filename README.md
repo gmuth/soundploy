@@ -46,7 +46,7 @@ Now your device should start playing the stream.
 This means that the selected source is not available - maybe because the device was reverted to factory settings.
 Installing sources is a one-time operation. Telnet to the device using port 17000 and run the following commands:
 ```
-envswitch boseurls set "http://no-marge.com;curl -s soundploy.gmuth.de/v2_install|sh" http://no-updates
+envswitch boseurls set "http://no-marge;curl -s soundploy.gmuth.de/v2_install|sh" http://no-updates
 sys reboot
 ```
 
