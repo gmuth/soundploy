@@ -44,7 +44,7 @@ Now your device should start playing the stream.
 ### 1005 UNKNOWN_SOURCE_ERROR
 
 This means that the selected source is not available - maybe because the device was reverted to factory settings.
-Adding a missing source is a one-time operation. Telnet to the device using port 17000 and run the following commands:
+Installing sources is a one-time operation. Telnet to the device using port 17000 and run the following commands:
 ```
 envswitch boseurls set "http://no-marge.com;curl -s soundploy.gmuth.de/v2_install|sh" http://no-updates
 sys reboot
