@@ -44,10 +44,13 @@ Now your device should start playing the stream.
 ### 1005 UNKNOWN_SOURCE_ERROR
 
 This means that the selected source is not available - maybe because the device was reverted to factory settings.
-Adding a missing source is a one-time operation.
-You can try one of those methods:
-- [SoundPloy V1](https://gist.github.com/gmuth/3cb7945df6654a965a8a4c60de2627b5) - This method requires root access to the device.
-- [SoundCork](https://github.com/deborahgu/soundcork) - After you successfully played a stream once you can stop SoundCork and use SoundPloy.
+Adding a missing source is a one-time operation. Telnet to the device using port 17000 and run the following commands:
+```
+envswitch boseurls set "http://no-marge.com;curl -s soundploy.gmuth.de/v2_install|sh" http://no-updates
+sys reboot
+```
+
+After reboot you should configure the urls from above again (see section Configure device).
 
 ## Save radio stream to preset button
 
