@@ -50,7 +50,12 @@ envswitch boseurls set "http://no-marge;curl -s soundploy.gmuth.de/v2_install|sh
 sys reboot
 ```
 
-After reboot you should configure the urls from above again (see section Configure device).
+After reboot you should configure the urls from above again.
+
+```
+envswitch boseurls set http://no-marge.com https://worldwide.bose.com/updates/soundtouch
+sys reboot
+```
 
 ## Save radio stream to preset button
 
