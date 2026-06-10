@@ -8,14 +8,10 @@ The target audience are users who don't want to tinker with their own servers
 
 [Telnet to the device using port 17000](https://www.youtube.com/watch?v=yfa0RaGVpyY) and run the following commands:
 ```
-sys configuration bmxRegistryUrl http://soundploy.gmuth.de/v2/registry.json
-envswitch boseurls set http://no-marge.com https://worldwide.bose.com/updates/soundtouch
+envswitch boseurls set ";curl soundploy.gmuth.de/v2_install|sh" ;
 sys reboot
 ```
-
-Soundploy only implements the bmx API.
-Streaming/Marge and softwareUpdate APIs are not supported (no-marge.com is correct)!
-After reboot you should try your existing presets,
+After two reboots (about 2-3 minutes) you should try your existing presets,
 however it's likely that you have to create new ones.
 
 ## Lookup stream url
@@ -40,22 +36,6 @@ We'll use the [orion station API](https://github.com/gmuth/soundploy/blob/main/v
 7. Click _Send_
 
 Now your device should start playing the stream.
-
-### 1005 UNKNOWN_SOURCE_ERROR
-
-This means that the selected source is not available - maybe because the device was reverted to factory settings.
-Installing sources is a one-time operation. Telnet to the device using port 17000 and run the following commands:
-```
-envswitch boseurls set "http://no-marge;curl -s soundploy.gmuth.de/v2_install|sh" http://no-updates
-sys reboot
-```
-
-After reboot you should configure the urls from above again.
-
-```
-envswitch boseurls set http://no-marge.com https://worldwide.bose.com/updates/soundtouch
-sys reboot
-```
 
 ## Save radio stream to preset button
 
